@@ -1,11 +1,19 @@
 <header class="site-header">
-  <nav>
-    <a href="{{ '/' | relative_url }}" class="logo">Sneksoft Studios</a>
+  <div class="shell-topbar">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <div class="brand-logo">
+        <span class="brand-orb"></span>
+      </div>
+      <div class="brand-text">
+        <span class="brand-title">Sneksoft Studios</span>
+        <span class="brand-subtitle">VR · FiveM · Tools</span>
+      </div>
+    </a>
 
-    <ul class="nav-menu">
-      <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="nav-links">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
 </header>

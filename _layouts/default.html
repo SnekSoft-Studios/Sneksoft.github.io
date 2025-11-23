@@ -1,23 +1,36 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} · {{ site.title }}</title>
-
-    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Main UI CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/material.css' | relative_url }}">
-    <link rel="icon" href="{{ '/assets/img/SnekSoft.svg' | relative_url }}>
-    {% seo %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/assets/img/SnekSoft.svg' | relative_url }}" type="image/svg+xml">
   </head>
 
   <body>
     {% include header.html %}
 
-    <main>
+    <main class="page-body">
       {{ content }}
     </main>
+
+    <footer class="site-footer">
+      <p>© {{ site.time | date: '%Y' }} {{ site.title }} · Built with love, VR and caffeine.</p>
+    </footer>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
