@@ -35,8 +35,11 @@ permalink: /about/
       <h3>VR & XR Stuff</h3>
       <p>Unity XR, passthrough, hand-tracking, gestures — all the immersive fun.</p>
 
-      <div class="lang-chip-row">
+      <div class="about-section glass-block">
 
+  <h2 class="pill-header">Languages We Speak</h2>
+
+  <div class="lang-chip-row">
 
   <!-- Lua -->
   <span class="lang-chip">
@@ -142,4 +145,5 @@ permalink: /about/
     JavaScript
   </span>
 
+</div>
 </div>
