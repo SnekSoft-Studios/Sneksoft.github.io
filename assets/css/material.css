@@ -625,62 +625,6 @@ body::before {
   font-size: 1.2rem;
   font-weight: 700;
 }
-.contact-pill-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.contact-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-
-  padding: 1rem 1.8rem;
-  font-size: 1rem;
-  font-weight: 600;
-
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(12px);
-
-  border-radius: 999px;
-  color: white;
-  text-decoration: none;
-
-  transition: 0.2s ease;
-}
-
-.contact-pill:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-}
-
-.contact-pill.discord {
-  background: linear-gradient(135deg, #5865F2, #4752C4);
-  border-color: rgba(110, 120, 255, 0.6);
-  box-shadow: 0 0 14px rgba(100, 110, 255, 0.35);
-}
-
-.contact-pill.discord:hover {
-  box-shadow: 0 0 18px rgba(100, 110, 255, 0.55);
-}
-
-.contact-pill .icon svg {
-  opacity: 0.9;
-}
-
-
-.footer-note {
-  opacity: 0.8;
-  font-size: 0.9rem;
-  margin-top: 1rem;
-}
 
 /* Larger SVG icons */
 .lang-chip svg {
@@ -763,4 +707,69 @@ body::before {
 .lang-chip[js] {
   --chip-glow: #ffe347aa;
   --chip-border: #ffd500;
+}
+.contact-card.contact-centered {
+  text-align: center;
+}
+
+/* Pill row layout */
+.contact-pill-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+/* Base pill style */
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.7rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  border-radius: 999px;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+
+  color: #ffffff;
+  transition: 0.2s ease;
+}
+
+.contact-pill:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Primary Discord pill */
+.contact-pill--discord {
+  background: linear-gradient(135deg, #5865F2, #4752C4);
+  border-color: rgba(110, 120, 255, 0.7);
+  box-shadow: 0 0 14px rgba(100, 110, 255, 0.4);
+}
+
+.contact-pill--discord:hover {
+  box-shadow: 0 0 18px rgba(100, 110, 255, 0.65);
+}
+
+/* Optional subtle tints */
+.contact-pill--github {
+  background: rgba(17, 17, 24, 0.9);
+}
+
+.contact-pill--email {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Icon sizing */
+.contact-pill .icon svg {
+  display: block;
 }
