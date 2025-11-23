@@ -53,21 +53,24 @@ html[data-theme="light"] {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: var(--font-sans), serif;
-  color: var(--text-main);
 
-  background-color: #050816;
-
-  background-image:
-    radial-gradient(circle at bottom, rgba(249, 115, 22, 0.6), transparent 60%),
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.35), transparent 55%),
-    linear-gradient(145deg, var(--bg-outer-1), var(--bg-outer-2), var(--bg-outer-3));
-
+  background-image: url('assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
 
-  padding: 2.5rem 1.5rem;
+  background-color: #050816; /* fallback */
+}
+
+.page-container {
+  background: rgba(15, 23, 42, 0.85); /* dark glassy surface */
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+  padding: 2rem;
+  max-width: 1120px;
+  margin: 3rem auto;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.5);
 }
 
 /* Main “device” shell */
