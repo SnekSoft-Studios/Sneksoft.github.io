@@ -38,7 +38,7 @@ body {
   color: var(--text-main);
 
   /* Background image is relative to this CSS file */
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,94 +66,71 @@ body::before {
   padding-inline: 16px;
 }
 
-/* ---------- Top “app” bar / header ---------- */
-
+/* HEADER BAR */
 .site-header {
-  max-width: 1180px;
-  margin: 18px auto 0;
-  padding-inline: 16px;
-}
-
-.shell-topbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 16px;
-
-  padding: 10px 14px;
-  border-radius: var(--radius-pill);
-  background: radial-gradient(circle at top left, rgba(148, 163, 184, 0.4), transparent 55%),
-    rgba(15, 23, 42, 0.92);
-  border: 1px solid var(--shell-border);
-  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(22px);
+  align-items: center;
+  padding: 14px 28px;
+  margin: 0 auto;
+  max-width: 1400px;
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  background: rgba(15, 17, 25, 0.55);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
 
-/* Brand */
-
-.brand {
+/* Left side (logo + text) */
+.nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: inherit;
+  gap: 14px;
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-pill);
-  padding: 2px;
-  background: conic-gradient(from 220deg, #22c55e, #6366f1, #ec4899, #22c55e);
-}
-
-.brand-orb {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  background: radial-gradient(circle at 30% 20%, #f9fafb, transparent 55%),
-    radial-gradient(circle at 80% 90%, rgba(147, 197, 253, 0.9), transparent 55%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: none !important; /* removes the gradient halo */
+  padding: 0;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
+  line-height: 1.2;
 }
 
-.brand-title {
-  font-family: var(--font-display);
-  font-size: 1.02rem;
-  letter-spacing: -0.02em;
+.brand-text strong {
+  font-size: 1.1rem;
+  color: white;
 }
 
-.brand-subtitle {
-  font-size: 0.74rem;
-  color: var(--text-subtle);
+.brand-sub {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  color: #cbd5e1;
 }
 
-/* Nav links */
-
-.nav-links {
+/* Right navigation */
+.nav-right {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
-.nav-links a {
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  font-size: 0.86rem;
+.nav-right a {
+  color: #dbeafe;
   text-decoration: none;
-  color: var(--text-main);
-  opacity: 0.85;
-  border: 1px solid transparent;
+  font-weight: 500;
+  transition: 0.2s ease;
 }
 
-.nav-links a:hover {
-  opacity: 1;
-  border-color: rgba(148, 163, 184, 0.9);
+.nav-right a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.5);
 }
-
 /* ---------- App shell (AirBnB-style panel) ---------- */
 
 .app-shell {
@@ -772,4 +749,85 @@ body::before {
 /* Icon sizing */
 .contact-pill .icon svg {
   display: block;
+}
+.universe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+.shell-tabs.single-header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.shell-tabs.single-header .tab-pill {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+/* Pill wrapper */
+.quest-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+.project-card--link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 1.25rem;
+}
+.rosterflow-thumb {
+  background-image: url('assets/img/rosterflow.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(141, 90, 255, 0.4);
+}
+.project-thumb-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+/* Quest Store Gradient Pill */
+.quest-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+
+  /* Meta Quest gradient */
+  background: linear-gradient(135deg, #7b5cff 0%, #4f46e5 40%, #1d4ed8 100%);
+  box-shadow: 0 0 20px rgba(111, 85, 255, 0.35);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover interaction */
+.quest-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 32px rgba(111, 85, 255, 0.55);
+}
+
+/* Active tap */
+.quest-pill:active {
+  transform: translateY(0);
+  box-shadow: 0 0 12px rgba(111, 85, 255, 0.3);
 }
