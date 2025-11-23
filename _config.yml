@@ -1,12 +1,25 @@
 title: "Sneksoft Studios"
 description: "VR • Games • Tools • Immersive Tech"
 
+# Correct GitHub Pages project path
 url: "https://sneksoft-studios.github.io"
-
 baseurl: "/Sneksoft.github.io"
 
+# Disable Jekyll entirely
 markdown: kramdown
 theme: null
+plugins: []
 
 future: true
 permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - _site
+  - .gitignore
+  - *.gemspec
