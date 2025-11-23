@@ -89,12 +89,12 @@ body::before {
 }
 
 .brand-logo {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
+  background-image: url('/assets/img/SnekSoft.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 50%;
-  object-fit: contain;
-  background: none !important; /* removes the gradient halo */
-  padding: 0;
 }
 
 .brand-text {
@@ -773,32 +773,38 @@ body::before {
 }
 /* Pill wrapper */
 .quest-pill {
-  margin-top: 18px;
-  padding: 10px 22px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  background: var(--accent-grad);
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-.quest-showcase {
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 40px auto;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  background: radial-gradient(circle at center,
-      rgba(106, 80, 255, 0.4),
-      rgba(90, 60, 255, 0.1)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px);
+  gap: 10px;
+
+  padding: 10px 20px;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #6a5cff, #8f6bff);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  box-shadow: 0 4px 16px rgba(110, 80, 255, 0.4);
+  backdrop-filter: blur(6px);
+
+  transition: 0.2s ease-in-out;
+}
+
+.quest-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(110, 80, 255, 0.6);
+}
+
+.quest-pill-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 .project-card--link {
   text-decoration: none;
