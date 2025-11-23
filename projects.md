@@ -46,11 +46,10 @@ permalink: /projects/
 
 <section class="card">
   <h2>In the Lab</h2>
-  <p>We continuously experiment with:</p>
   <ul class="pill-list">
-    <li>Meta Quest 2/3 specific optimisations</li>
-    <li>OpenXR-based gesture systems</li>
-    <li>VR-ready UI kits for FiveM servers</li>
+    <li>Meta Quest 2/3 optimisations</li>
+    <li>OpenXR gesture systems</li>
+    <li>VR-ready UI kits for FiveM</li>
     <li>Better dev tools for database-heavy RP servers</li>
   </ul>
 </section>

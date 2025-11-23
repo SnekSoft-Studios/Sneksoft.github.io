@@ -2,6 +2,7 @@
 layout: default
 title: "Home"
 ---
+
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-content">
@@ -16,8 +17,10 @@ title: "Home"
     <div class="hero-chips">
       <span class="chip">Unity XR</span>
       <span class="chip">Meta Quest</span>
-      <span class="chip">FiveM · QBCore</span>
-      <span class="chip">Next.js · Firebase</span>
+      <span class="chip">FiveM</span>
+      <span class="chip">QBCore</span>
+      <span class="chip">Next.js</span>
+      <span class="chip">Firebase</span>
     </div>
   </div>
 </section>
@@ -59,7 +62,7 @@ title: "Home"
   <p>Every Sneksoft project sits at the intersection of <strong>technical depth</strong> and <strong>player experience</strong>. We care about:</p>
   <ul class="pill-list">
     <li>Security-first design</li>
-    <li>Clear, responsive UX</li>
+    <li>Clean, responsive UX</li>
     <li>Performance and stability</li>
     <li>Easy collaboration and iteration</li>
   </ul>

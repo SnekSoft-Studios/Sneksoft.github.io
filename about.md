@@ -11,11 +11,11 @@ permalink: /about/
 
 <section class="card">
   <h2>What We Stand For</h2>
-  <p>Sneksoft Studios is focused on building tools and experiences that give creators and communities more control.</p>
+  <p>Sneksoft Studios builds tools and experiences that give creators and communities more control and more immersion.</p>
   <ul>
-    <li><strong>Player-first design</strong> – mechanics that feel good before they look good.</li>
-    <li><strong>Technical maturity</strong> – robust infrastructure, logging and observability.</li>
-    <li><strong>Clean UX</strong> – Material 3-inspired visuals across web, desktop, and in-game UI.</li>
+    <li><strong>Player-first design</strong> – mechanics before visuals.</li>
+    <li><strong>Technical maturity</strong> – stability, logging, observability.</li>
+    <li><strong>Clean UX</strong> – Material 3-inspired visuals.</li>
   </ul>
 </section>
 
