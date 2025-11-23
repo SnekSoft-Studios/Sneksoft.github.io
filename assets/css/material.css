@@ -625,52 +625,56 @@ body::before {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
-.contact-buttons {
+.contact-pill-row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 1.4rem 0 1.8rem;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-.contact-btn {
-  display: flex;
+.contact-pill {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
-  padding: 0.9rem 1.5rem;
+
+  padding: 1rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
 
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(12px);
 
-  color: #fff;
-  border-radius: 14px;
-  font-weight: 600;
-  font-size: 0.95rem;
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
 
   transition: 0.2s ease;
-  text-decoration: none;
 }
 
-.contact-btn:hover {
+.contact-pill:hover {
   transform: translateY(-3px);
   border-color: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
 
-.contact-btn.discord {
+.contact-pill.discord {
   background: linear-gradient(135deg, #5865F2, #4752C4);
   border-color: rgba(110, 120, 255, 0.6);
   box-shadow: 0 0 14px rgba(100, 110, 255, 0.35);
 }
 
-.contact-btn.discord:hover {
+.contact-pill.discord:hover {
   box-shadow: 0 0 18px rgba(100, 110, 255, 0.55);
 }
 
-.contact-btn .icon svg {
+.contact-pill .icon svg {
   opacity: 0.9;
 }
+
 
 .footer-note {
   opacity: 0.8;
