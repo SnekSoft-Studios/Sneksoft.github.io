@@ -1,25 +1,25 @@
 title: "Sneksoft Studios"
 description: "VR • Games • Tools • Immersive Tech"
 
-# Correct GitHub Pages project path
+# Required for GitHub Pages PROJECT SITES
 url: "https://sneksoft-studios.github.io"
 baseurl: "/Sneksoft.github.io"
 
-# Disable Jekyll entirely
+# Enable Jekyll features
 markdown: kramdown
-theme: null
-plugins: []
+theme: minima
 
-future: true
-permalink: /:title/
+plugins:
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
-  - _site
-  - .gitignore
-  - *.gemspec
+relative_links:
+  enabled: true
+
+# Ensure assets & folders are included
+include:
+  - assets
+
+sass:
+  style: compressed
