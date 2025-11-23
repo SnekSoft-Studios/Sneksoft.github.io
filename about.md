@@ -61,44 +61,52 @@ permalink: /about/
 
   <!-- Tech Stack -->
   <div class="about-section glass-block">
-    <h2>What We Use</h2>
-    <p>We're not overly precious about tech — we use whatever gets the job done nicely.</p>
+    <h2>Our Languages</h2>
+    <p>We're not overly precious about tech — we use whatever gets the job done nicely. Here are the languages we specialise in</p>
 
-    <div class="tech-grid">
+   <div class="lang-chip-row">
 
-      <div class="tech-item">
-        <span class="tech-icon">🎮</span>
-        Unity • Meta XR • OpenXR
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/lua.svg" alt=""> Lua
+  </span>
 
-      <div class="tech-item">
-        <span class="tech-icon">🧩</span>
-        FiveM • QBCore • Lua • TS
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/typescript.svg" alt=""> TypeScript
+  </span>
 
-      <div class="tech-item">
-        <span class="tech-icon">🕸️</span>
-        React • Next.js • Material 3
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/react.svg" alt=""> React
+  </span>
 
-      <div class="tech-item">
-        <span class="tech-icon">🔥</span>
-        Firebase • Firestore
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/csharp.svg" alt=""> C#
+  </span>
 
-      <div class="tech-item">
-        <span class="tech-icon">🗂️</span>
-        YouTrack • GitHub • GitLab
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/bash.svg" alt=""> Bash
+  </span>
 
-      <div class="tech-item">
-        <span class="tech-icon">⚙️</span>
-        Internal tooling & automation
-      </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/kotlin.svg" alt=""> Kotlin
+  </span>
 
-    </div>
-  </div>
+  <span class="lang-chip">
+    <img src="/assets/icons/xml.svg" alt=""> XML
+  </span>
 
+  <span class="lang-chip">
+    <img src="/assets/icons/html.svg" alt=""> HTML
+  </span>
+
+  <span class="lang-chip">
+    <img src="/assets/icons/css.svg" alt=""> CSS
+  </span>
+
+  <span class="lang-chip">
+    <img src="/assets/icons/js.svg" alt=""> JavaScript
+  </span>
+
+</div>
   <!-- Philosophy -->
   <div class="about-section glass-block">
     <h2>How We Work</h2>
@@ -106,10 +114,12 @@ permalink: /about/
 
     <ul class="pill-list">
       <li>Player-first design</li>
+      <li>Modern</li>
       <li>Fast iteration</li>
-      <li>No clutter, no noise</li>
+      <li>No clutter</li>
+      <li>No Noise</li>
       <li>Security by default</li>
-      <li>Looks good, feels good</li>
+      <li>Looks and feels good</li>
     </ul>
   </div>
 
