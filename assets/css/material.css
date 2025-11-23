@@ -145,29 +145,30 @@ body::before {
 }
 
 /* top “tabs” row (Amazing views, Beachfront, etc) */
+
 .shell-tabs {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0;
-  padding: 20px 0;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
 }
 
 .tab-pill {
-  padding: 10px 24px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  cursor: default;
-  font-weight: 600;
-  font-size: 1rem;
-  backdrop-filter: blur(12px);
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: var(--text-subtle);
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .tab-pill--active {
-  background: var(--accent-grad);
-  border-color: transparent;
-  color: white;
+  color: #f9fafb;
+  background: rgba(15, 23, 42, 0.98);
+  border-color: var(--accent-soft);
+  box-shadow: 0 0 0 1px rgba(179, 136, 255, 0.4);
 }
 
 /* Filter row */
@@ -772,33 +773,11 @@ body::before {
   border: 1px solid rgba(255,255,255,0.1);
 }
 /* Pill wrapper */
-.quest-pill {
-  margin-top: 18px;
-  padding: 10px 22px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  background: var(--accent-grad);
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
-.quest-showcase {
+.quest-button-wrapper {
   width: 100%;
-  max-width: 380px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 40px auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at center,
-      rgba(106, 80, 255, 0.4),
-      rgba(90, 60, 255, 0.1)
-  );
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(14px);
+  padding: 2.5rem 0;
 }
 .project-card--link {
   text-decoration: none;

@@ -4,7 +4,8 @@ title: "Home"
 ---
 
 <section class="app-shell">
- <div class="shell-tabs">
+
+  <div class="shell-tabs single-header">
   <span class="tab-pill tab-pill--active">Our Projects</span>
 </div>
 
@@ -66,9 +67,9 @@ title: "Home"
     </div>
  <!-- QUEST STORE BUTTON (replacing map area) -->
   <div class="quest-button-wrapper">
-    <a href="https://www.meta.com/quest/store/" target="_blank" class="quest-pill">
-  View on Quest Store
-</a>
+    <a href="https://www.meta.com/quest/store/"
+       target="_blank"
+       class="quest-pill">
       <svg width="800px" height="800px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
