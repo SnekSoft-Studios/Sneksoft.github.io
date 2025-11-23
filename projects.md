@@ -4,52 +4,59 @@ title: "Projects"
 permalink: /projects/
 ---
 
-<section class="page-header">
+<section class="app-shell page-shell">
   <h1>Projects</h1>
-  <p>A snapshot of the ecosystems and tools we’re building.</p>
-</section>
+  <p>Some of the ecosystems and tools we’re actively building or maintaining.</p>
 
-<section class="card-grid">
-  <article class="card">
-    <h2>Sneksoft VR Framework</h2>
-    <p>A modular Unity XR toolkit for fast prototyping and production-ready VR experiences.</p>
-    <ul>
-      <li>Hand tracking & gestures</li>
-      <li>Passthrough / MR support</li>
-      <li>Material 3 VR dashboards</li>
-      <li>Multiplayer-ready architecture</li>
-    </ul>
-  </article>
+  <div class="list-column" style="margin-top: 18px;">
 
-  <article class="card">
-    <h2>Luna RP Systems</h2>
-    <p>An advanced FiveM stack powering serious RP with modern tooling and VR considerations.</p>
-    <ul>
-      <li>Gang Hub with Material 3 UI</li>
-      <li>VR mode support for Meta Quest</li>
-      <li>Custom HUD v6, radio UI</li>
-      <li>Automated bug-report pipelines</li>
-    </ul>
-  </article>
+    <article class="project-card">
+      <div class="project-thumb project-thumb--vr"></div>
+      <div class="project-body">
+        <h3>Sneksoft VR Framework</h3>
+        <p>Modular Unity XR toolkit powering hand tracking, passthrough, gesture systems and multiplayer-ready environments.</p>
+        <div class="project-meta">
+          <div class="meta-tags">
+            <span class="meta-tag">Unity</span>
+            <span class="meta-tag">Meta Quest</span>
+            <span class="meta-tag">OpenXR</span>
+          </div>
+          <span>Core framework</span>
+        </div>
+      </div>
+    </article>
 
-  <article class="card">
-    <h2>RosterFlow</h2>
-    <p>A Firestore-backed platform for label, roster and opportunity management.</p>
-    <ul>
-      <li>Next.js + Firebase + Cloud Run</li>
-      <li>AI-assisted opportunity suggestions</li>
-      <li>Printable rosters & PDFs</li>
-      <li>Multi-tenant friendly architecture</li>
-    </ul>
-  </article>
-</section>
+    <article class="project-card">
+      <div class="project-thumb project-thumb--fivem"></div>
+      <div class="project-body">
+        <h3>Luna RP Systems</h3>
+        <p>Serious FiveM RP infrastructure with gang hub, HUD, radio UI, VR support and YouTrack-backed bug tracking.</p>
+        <div class="project-meta">
+          <div class="meta-tags">
+            <span class="meta-tag">QBCore</span>
+            <span class="meta-tag">VR-ready</span>
+            <span class="meta-tag">Discord</span>
+          </div>
+          <span>Live server</span>
+        </div>
+      </div>
+    </article>
 
-<section class="card">
-  <h2>In the Lab</h2>
-  <ul class="pill-list">
-    <li>Meta Quest 2/3 optimisations</li>
-    <li>OpenXR gesture systems</li>
-    <li>VR-ready UI kits for FiveM</li>
-    <li>Better dev tools for database-heavy RP servers</li>
-  </ul>
+    <article class="project-card">
+      <div class="project-thumb project-thumb--web"></div>
+      <div class="project-body">
+        <h3>RosterFlow</h3>
+        <p>Label and team management tool using Firebase + Next.js with AI-assisted opportunity suggestions and PDF roster exports.</p>
+        <div class="project-meta">
+          <div class="meta-tags">
+            <span class="meta-tag">Next.js</span>
+            <span class="meta-tag">Firebase</span>
+            <span class="meta-tag">Internal tooling</span>
+          </div>
+          <span>Preview build</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
 </section>

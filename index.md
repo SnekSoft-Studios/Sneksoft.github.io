@@ -11,6 +11,7 @@ title: "Home"
     <span class="tab-pill">Web Tools</span>
     <span class="tab-pill">Meta Quest</span>
     <span class="tab-pill">Tools in R&D</span>
+    <span class="tab-pill">Privacy & Data</span>
   </div>
 
   <div class="shell-filter-row">
@@ -96,6 +97,5 @@ title: "Home"
     </aside>
 
   </div>
-
 
 </section>
