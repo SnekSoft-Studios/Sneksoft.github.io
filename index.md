@@ -1,100 +1,88 @@
 ---
 layout: default
-title: "Home"
+title: "Projects"
+permalink: /
 ---
 
-<section class="app-shell">
+<section class="app-shell page-shell">
 
-  <div class="shell-tabs">
-    <span class="tab-pill tab-pill--active">VR Dashboards</span>
-    <span class="tab-pill">FiveM Systems</span>
-    <span class="tab-pill">Web Tools</span>
-    <span class="tab-pill">Meta Quest</span>
-    <span class="tab-pill">Tools in R&D</span>
-    <span class="tab-pill">Privacy & Data</span>
-  </div>
+  <!-- Page Title -->
+  <h1 class="fancy-title" style="text-align:center;">Our Projects</h1>
 
-  <div class="shell-filter-row">
-    <div class="filter-left">
-      <label>Display projects</label>
-      <div class="filter-toggle">
-        <span>Shipped</span>
-        <span>•</span>
-        <span>In development</span>
-      </div>
-    </div>
+  <div class="projects-shell">
 
-    <button class="filter-button">Filters</button>
-  </div>
+    <!-- LEFT SIDE: PROJECT LIST -->
+    <div class="projects-left">
 
-  <div class="shell-grid">
-    <!-- LEFT COLUMN: “cards” -->
-    <div class="list-column">
-
-      <article class="project-card">
-        <div class="project-thumb project-thumb--vr"></div>
-        <div class="project-body">
-          <h3>Sneksoft VR Framework</h3>
-          <p>Unity XR foundations for hand tracking, gesture UX and multiplayer-ready VR scenes.</p>
-          <div class="project-meta">
-            <div class="meta-tags">
-              <span class="meta-tag">Unity 6</span>
-              <span class="meta-tag">Meta XR</span>
-              <span class="meta-tag">OpenXR</span>
-            </div>
-            <span>Core library</span>
-          </div>
+      <!-- Luna RP -->
+      <a href="https://lunaroleplay.pages.dev/" class="project-card project-link">
+        <div class="project-thumb">
+          <img src="{{ '/assets/img/luna.png' | relative_url }}" alt="Luna RP Logo">
         </div>
-      </article>
 
-      <article class="project-card">
-        <div class="project-thumb project-thumb--fivem"></div>
         <div class="project-body">
           <h3>Luna RP Systems</h3>
-          <p>FiveM stack with gang hub, HUD v6, radio UI and upcoming VR client support.</p>
+          <p>
+            FiveM stack with gang hub, HUD v6, radio UI, Discord syncing and
+            upcoming VR client support.
+          </p>
+
           <div class="project-meta">
             <div class="meta-tags">
               <span class="meta-tag">QBCore</span>
-              <span class="meta-tag">VR mode</span>
-              <span class="meta-tag">Discord linking</span>
+              <span class="meta-tag">VR</span>
+              <span class="meta-tag">Luna RP</span>
+              <span class="meta-tag">Discord</span>
+              <span class="meta-tag">Lua</span>
+              <span class="meta-tag">FiveM</span>
             </div>
-            <span>Live server</span>
           </div>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
-        <div class="project-thumb project-thumb--web"></div>
+      <!-- RosterFlow -->
+      <a href="" class="project-card project-link">
+        <div class="project-thumb">
+          <img src="{{ '/assets/img/rosterflow.png' | relative_url }}" alt="RosterFlow Logo">
+        </div>
+
         <div class="project-body">
           <h3>RosterFlow</h3>
-          <p>Firebase + Next.js platform for labels and teams with AI-assisted opportunity suggestions.</p>
+          <p>
+            An industry-focused white-label platform for labels, teams and artists.
+          </p>
+
           <div class="project-meta">
             <div class="meta-tags">
               <span class="meta-tag">Next.js</span>
               <span class="meta-tag">Firebase</span>
-              <span class="meta-tag">Firestore</span>
+              <span class="meta-tag">TypeScript</span>
+              <span class="meta-tag">Artists</span>
+              <span class="meta-tag">Label management</span>
             </div>
-            <span>Preview build</span>
-          </div>
+     </div>
         </div>
-      </article>
+      </a>
 
     </div>
 
-    <!-- RIGHT COLUMN: “map-style” overview -->
-    <aside class="map-column">
-      <div class="map-header">
-        <span class="map-title">Sneksoft project universe</span>
-        <span class="map-chip">Live · In dev · R&D</span>
+    <!-- RIGHT SIDE: META QUEST PANEL -->
+    <div class="projects-right glass-block meta-panel">
+      <div class="meta-panel-inner">
+        <img
+          class="meta-logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/1/19/Meta_Platforms_Inc._logo.svg"
+          alt="Meta Logo"
+        >
+        <a
+          href="https://www.meta.com/experiences/?utm_source=sneksoft"
+          target="_blank"
+          class="m3-button m3-button-filled meta-button"
+        >
+          View on Quest Store
+        </a>
       </div>
-
-      <div class="map-grid">
-        <span class="map-pin">VR Core</span>
-        <span class="map-pin">FiveM Stack</span>
-        <span class="map-pin">Web Tools</span>
-        <span class="map-pin">Experimental</span>
-      </div>
-    </aside>
+    </div>
 
   </div>
 
