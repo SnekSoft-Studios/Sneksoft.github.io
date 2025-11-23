@@ -1,4 +1,42 @@
-<div class="lang-chip-row">
+---
+layout: default
+title: "About"
+permalink: /about/
+---
+
+<section class="app-shell page-shell about-shell">
+
+  <h1 class="fancy-title">Hey, we're Sneksoft.</h1>
+  <p class="subtitle">
+    A small studio building cool stuff in <strong>VR</strong>, <strong>FiveM</strong>, and <strong>modern web tools</strong>.
+    We experiment, break things, fix them properly — and ship experiences we’d actually use.
+  </p>
+
+  <!-- Mission -->
+  <div class="about-section glass-block">
+    <h2>What We're About</h2>
+    <p>
+      Sneksoft started with the idea, “What if we built this… but nicer?”
+      That turned into VR frameworks, FiveM systems, dashboards, and tools designed to make development smoother and gameplay more fun.
+    </p>
+    <p>
+      We care about polished UI, stable systems, and making things feel effortless. If it looks good and feels clean, we’re happy.
+    </p>
+  </div>
+
+  <!-- What We Do -->
+  <div class="about-cards">
+
+    <!-- VR -->
+    <div class="about-card">
+      <div class="icon-bubble">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M11 7V4l-7 6l7 6v-3c4.55 0 7.72 1.22 10 4c-1-5-4-10-10-10Z"/></svg>
+      </div>
+      <h3>VR & XR Stuff</h3>
+      <p>Unity XR, passthrough, hand-tracking, gestures — all the immersive fun.</p>
+
+      <div class="lang-chip-row">
+
 
   <!-- Lua -->
   <span class="lang-chip">
@@ -82,7 +120,7 @@
 <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"/>
 </svg>
     HTML
-  </span>
+
 
   <!-- CSS -->
   <span class="lang-chip">
