@@ -1,0 +1,11 @@
+title: "Sneksoft Studios"
+description: "VR • Games • Tools • Immersive Tech"
+url: "https://sneksoft.github.io"
+baseurl: ""   # keep empty for user/org GitHub Pages repo
+
+markdown: kramdown
+theme: null
+
+# Optional: show future posts/pages immediately
+future: true
+permalink: /:title/

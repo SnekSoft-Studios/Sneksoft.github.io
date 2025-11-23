@@ -1,0 +1,26 @@
+<header class="top-app-bar elevation-2">
+    <div class="top-app-bar-inner">
+      <a href="{{ '/' | relative_url }}" class="brand">
+        <span class="logo-wrapper">
+          <img src="{{ '/assets/img/sneksoft-logo.svg' | relative_url }}" alt="Sneksoft logo" class="logo">
+        </span>
+        <span class="brand-text">
+          <span class="brand-title">{{ site.title }}</span>
+          <span class="brand-subtitle">VR • Games • Tools • Immersive Tech</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="{{ '/projects/' | relative_url }}" class="{% if page.url contains '/projects' %}active{% endif %}">Projects</a>
+        <a href="{{ '/about/' | relative_url }}" class="{% if page.url contains '/about' %}active{% endif %}">About</a>
+        <a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains '/contact' %}active{% endif %}">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="icon-button" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀️</span>
+        <span class="icon-moon">🌙</span>
+      </button>
+    </div>
+  </header>
+  

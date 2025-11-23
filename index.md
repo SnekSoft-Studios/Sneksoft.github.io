@@ -1,99 +1,66 @@
 ---
-title: "Sneksoft Studios"
+layout: default
+title: "Home"
 ---
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <h1>Sneksoft Studios</h1>
+    <p>We build immersive <strong>VR experiences</strong>, advanced <strong>FiveM systems</strong>, and modern <strong>web tools</strong> with a Material 3 soul.</p>
 
-<link rel="stylesheet" href="assets/css/material.css">
+    <div class="hero-actions">
+      <a href="{{ '/projects/' | relative_url }}" class="m3-button m3-button-filled">View Projects</a>
+      <a href="{{ '/contact/' | relative_url }}" class="m3-button m3-button-tonal">Work with us</a>
+    </div>
 
-<div class="hero">
-  <h1>Sneksoft Studios</h1>
-  <p>VR • Games • Tools • Immersive Tech</p>
-</div>
+    <div class="hero-chips">
+      <span class="chip">Unity XR</span>
+      <span class="chip">Meta Quest</span>
+      <span class="chip">FiveM · QBCore</span>
+      <span class="chip">Next.js · Firebase</span>
+    </div>
+  </div>
+</section>
 
----
+<section class="card-grid">
+  <article class="card">
+    <h2>VR & Mixed Reality</h2>
+    <p>Hand tracking, passthrough, gesture UX and multiplayer foundations powered by Unity, Meta XR and OpenXR.</p>
+    <ul>
+      <li>Custom XR interaction layers</li>
+      <li>Material 3 VR dashboards</li>
+      <li>Meta Quest optimisations</li>
+    </ul>
+  </article>
 
-## 🐍 Who We Are
-Sneksoft Studios develops cutting-edge **VR experiences**, **FiveM systems**, and **game tools** built on modern technologies such as Unity XR, Meta Quest, OpenXR, QBCore, Firebase, and Next.js.
+  <article class="card">
+    <h2>FiveM Systems</h2>
+    <p>Serious RP infrastructure: gang management, HUDs, radio UI, VR support and deeply integrated tools for admins and players.</p>
+    <ul>
+      <li>QBCore-based frameworks</li>
+      <li>Discord role linking</li>
+      <li>Bug reports → YouTrack → Discord</li>
+    </ul>
+  </article>
 
-We focus on:
-- Minimalist modern UI  
-- Security-first development  
-- Performance-optimized systems  
-- Cross-platform compatibility  
-- Material 3 design principles  
+  <article class="card">
+    <h2>Web & Cloud</h2>
+    <p>Next.js + Firebase apps for labels, dev teams and communities. AI-assisted workflows that stay out of your way.</p>
+    <ul>
+      <li>Firestore dashboards</li>
+      <li>PDF & roster generators</li>
+      <li>YouTrack automations</li>
+    </ul>
+  </article>
+</section>
 
----
-
-## 🚀 Our Specialities
-### 🎮 VR Development
-- Hand-tracking interaction  
-- MR Passthrough  
-- Gesture-driven interfaces  
-- Multiplayer foundations  
-- Material 3 VR dashboards  
-
-### 🛠 FiveM & Frameworks
-- Full VR mode integration  
-- Gang Hub (Material 3 UI)  
-- x-radiolist with Discord mapping  
-- izzy-hud v6  
-- Bug reporter → YouTrack → Discord automation  
-
-### 🌐 Cloud Tools
-- Firebase + Next.js platforms  
-- Automated AI content generation  
-- Firestore-driven workflows  
-- PDF engines for rosters, EULAs, reports  
-- Multi-service integration pipelines  
-
----
-
-## 🧩 Our Projects
-### 🌀 Sneksoft VR Framework
-A unified toolkit for:
-- Hand tracking  
-- XR subsystems  
-- Passthrough  
-- VR UI  
-- Multiplayer foundations  
-
-### 🐍 Luna RP Systems
-- VR mode  
-- Radio UI  
-- Gang management  
-- HUD v6  
-- Job restrictions  
-- Player-quality optimisations  
-
-### 📊 RosterFlow  
-Artist-label management with:
-- Firestore  
-- Next.js 15  
-- Cloud Run  
-- AI-assisted career tools  
-
----
-
-## 🧱 Tech Stack
-- **Unity 6.3+**, **OpenXR**, **Meta XR**, C#  
-- **QBCore**, **Node 22**, **Lua**  
-- **Next.js**, **TypeScript**, **Firebase**  
-- **MariaDB 12+**, **MySQL 8**  
-- **YouTrack automation workflows**  
-- **GitLab & GitHub**  
-
----
-
-## 👥 Collaboration
-We work with developers, artists, VR creators, and community teams.  
-Interested in joining or partnering? Open an issue or contact us.
-
----
-
-## 📬 Contact
-- GitHub: https://github.com/Sneksoft  
-- Website: https://sneksoft.github.io  
-- Discord: *(add link)*
-
----
-
-<div class="footer">© Sneksoft Studios</div>
+<section class="card">
+  <h2>Our Philosophy</h2>
+  <p>Every Sneksoft project sits at the intersection of <strong>technical depth</strong> and <strong>player experience</strong>. We care about:</p>
+  <ul class="pill-list">
+    <li>Security-first design</li>
+    <li>Clear, responsive UX</li>
+    <li>Performance and stability</li>
+    <li>Easy collaboration and iteration</li>
+  </ul>
+</section>
