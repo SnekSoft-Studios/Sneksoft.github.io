@@ -435,3 +435,169 @@ body::before {
   margin-top: 18px;
   margin-bottom: 6px;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.m3-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.38);
+  color: var(--text-main);
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.22s ease;
+}
+
+.m3-btn:hover {
+  background: rgba(15, 23, 42, 0.98);
+  border-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+/* Accent Discord button */
+.m3-btn-accent {
+  background: linear-gradient(145deg, #5865f2, #3c45b2);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(88, 101, 242, 0.5);
+}
+
+.m3-btn-accent:hover {
+  background: linear-gradient(145deg, #6a74ff, #4c55d7);
+  transform: translateY(-3px);
+}
+
+/* Icons */
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  opacity: 0.9;
+}
+
+.btn-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.fancy-title {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-subtle);
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+/* Glass blocks */
+.glass-block {
+  background: rgba(15, 23, 42, 0.92);
+  padding: 22px 26px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(24px);
+  margin-bottom: 28px;
+}
+
+/* Card Row under “What We Do” */
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.about-card {
+  background: rgba(17, 24, 39, 0.96);
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.55);
+}
+
+/* Icon Bubble */
+.icon-bubble {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff22, #00000033);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.08);
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-bubble svg {
+  width: 30px;
+  height: 30px;
+  color: var(--accent-strong);
+  opacity: 0.9;
+}
+
+/* Tech Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.tech-item {
+  background: rgba(17, 24, 39, 0.96);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-icon {
+  font-size: 1.3rem;
+}
+
+/* Pill list reused */
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.pill-list li {
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  font-size: 0.85rem;
+}

@@ -7,7 +7,6 @@ permalink: /privacy/
 <section class="app-shell page-shell">
   <h1>Privacy Policy</h1>
   <p><strong>Last updated:</strong> {{ site.time | date: "%Y-%m-%d" }}</p>
-
   <h2>1. Who we are</h2>
   <p>Sneksoft Studios (“we”, “us”, “our”) builds VR experiences, FiveM systems and supporting web tools. This policy explains how we handle information across:</p>
   <ul>
