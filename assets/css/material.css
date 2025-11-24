@@ -1,10 +1,12 @@
-/* ==========================================================================
-   SNEKSOFT STUDIOS · MATERIAL 3 THEME
-   Complete replacement for assets/css/material.css
-   ========================================================================== */
-
-/* ---------- Design Tokens ---------- */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {}
+  }
+}
 :root {
   --accent: #b388ff;
   --accent-strong: #e5d4ff;

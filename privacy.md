@@ -115,16 +115,9 @@ permalink: /privacy/
   <p>Because we may use global infrastructure providers, your data may be processed in countries outside your own. Where required by law, we rely on appropriate safeguards (for example, standard contractual clauses between providers).</p>
 
   <h2>13. Contact</h2>
-  <p>If you have questions about this policy or how we handle data in a specific Sneksoft project, you can contact us via:</p>
-  <ul>
-    <li>GitHub: <a href="https://github.com/SnekSoft-Studios" target="_blank">SnekSoft-Studios</a></li>
-<!-- Discord -->
-    <a href="https://discord.com/bXUMBDKZVx" target="_blank" class="brand-btn">
-        <img src="{{'/assets/img/discord.png' | relative_url }}" class="btn-icon" />
-        Join the Discord
-    </a>
-  </ul>
+  <p>If you have questions about this policy or how we handle data in a specific Sneksoft project, you can contact us via our contact Us Page</p>
 
   <h2>14. Changes to this policy</h2>
+
   <p>We may update this privacy policy as projects evolve or legal requirements change. When we do, we’ll update the “Last updated” date at the top. For significant changes, we may also highlight the update in-app, on the website or via community channels.</p>
 </section>
