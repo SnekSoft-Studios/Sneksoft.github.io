@@ -126,48 +126,67 @@ body::before {
   max-width: 900px;
   margin: 2rem auto;
 }
+/* ---- Team page layout ---- */
 
+.team-shell {
+  max-width: 960px;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Main person card */
 .team-card {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
-  border-radius: 18px;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(12px);
-  margin: 2rem 0;
+  gap: 1.75rem;
+  padding: 1.75rem 2rem;
+  margin-top: 2rem;
+  border-radius: 24px;
+  background: radial-gradient(circle at top left, #1f2937, #020617);
+  box-shadow:
+    0 22px 55px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(148, 163, 184, 0.15);
 }
 
+/* Avatar on the left */
 .team-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 16px;
+  width: 96px;
+  height: 96px;
+  border-radius: 20px;
   object-fit: cover;
   flex-shrink: 0;
-  box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
 }
 
-.team-info {
+/* Text column */
+.team-content {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 }
 
 .team-name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .team-role {
-  color: #bfbfbf;
-  margin: 4px 0 12px;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
 }
 
 .team-bio {
-  max-width: 600px;
+  font-size: 0.98rem;
   line-height: 1.6;
-  opacity: 0.9;
+  color: rgba(226, 232, 240, 0.9);
+}
+
+/* Behind-the-scenes card */
+.bts-card {
+  margin-top: 2.5rem;
+  padding: 1.75rem 2rem;
+  border-radius: 24px;
 }
 
 
