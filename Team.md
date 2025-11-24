@@ -17,7 +17,7 @@ permalink: /team/
   <!-- Team member card -->
   <div class="team-card">
     <img
-      src="{{ '/assets/img/staff/dan.png' | relative_url }}"
+      src="{{'/assets/img/staff/dm.png' | relative_url }}"
       alt="Daniel McVittie"
       class="team-avatar"
     />
