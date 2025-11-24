@@ -5,8 +5,9 @@ permalink: /store/
 ---
 
 <section class="app-shell page-shell">
-  <h1>Projects</h1>
-  <p>Some of the ecosystems and tools we’re actively building or maintaining.</p>
+  <h1>Store</h1>
+  <p>Your gateway to all things Snek. From powerful FiveM tools to immersive VR content and polished game-ready assets, everything here is built with the same care, creativity, and playful spirit that fuels Sneksoft. Whether you’re leveling up your server, upgrading your workflow, or diving deeper into our worlds, this is the place to gear up and support the studio.
+Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
 
   <div class="list-column" style="margin-top: 18px;">
 
@@ -45,7 +46,7 @@ permalink: /store/
       <div class="project-meta">
         <div class="meta-tags">
           <span class="meta-tag">VR</span>
-          <span class="meta-tag"PassThrough</span>
+          <span class="meta-tag">PassThrough</span>
           <span class="meta-tag">Quest 3 / 3S</span>
           <span class="meta-tag">FMOD</span>
           <span class="meta-tag">Open World</span>
@@ -55,5 +56,24 @@ permalink: /store/
   </article>
 </a>
 
+<a href="https://makerworld.com/en/@meowmeowhiss12" class="project-card-link">
+  <article class="project-card">
+    <div class="project-thumb">
+      <img src="{{ '/assets/img/bambu' | relative_url }}" alt="Luna RP Preview" class="project-image">
+    </div>
+
+    <div class="project-body">
+      <h3>3D Printining</h3>
+      <p>Crafted for makers. Ready for your printer. Explore a growing collection of high-quality, Snek-approved 3D models designed for hobbyists, builders, and creative tinkerers. Every model is clean, optimized, and easy to print—perfect for adding a bit of style, fun, or utility to your setup.
+      Grab a file, fire up your printer, and bring some Sneksoft magic into the real world.</p>
+      <div class="project-meta">
+        <div class="meta-tags">
+          <span class="meta-tag">3D Printing</span>
+          <span class="meta-tag">Bambu Lab</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</a>
   </div>
 </section>
