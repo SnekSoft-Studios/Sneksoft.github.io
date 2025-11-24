@@ -1,89 +1,24 @@
 ---
 layout: default
-title: "Projects"
+title: "Welcome"
 permalink: /
 ---
 
-<section class="app-shell page-shell">
-
-  <!-- Page Title -->
-  <h1 class="fancy-title" style="text-align:center;">Our Projects</h1>
-
-  <div class="projects-shell">
-
-    <!-- LEFT SIDE: PROJECT LIST -->
-    <div class="projects-left">
-
-      <!-- Luna RP -->
-      <a href="https://lunaroleplay.pages.dev/" class="project-card project-link">
-        <div class="project-thumb">
-          <img src="{{ '/assets/img/luna.png' | relative_url }}" alt="Luna RP Logo">
-        </div>
-
-        <div class="project-body">
-          <h3>Luna RP Systems</h3>
-          <p>
-            FiveM stack with gang hub, HUD v6, radio UI, Discord syncing and
-            upcoming VR client support.
-          </p>
-
-          <div class="project-meta">
-            <div class="meta-tags">
-              <span class="meta-tag">QBCore</span>
-              <span class="meta-tag">VR</span>
-              <span class="meta-tag">Luna RP</span>
-              <span class="meta-tag">Discord</span>
-              <span class="meta-tag">Lua</span>
-              <span class="meta-tag">FiveM</span>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- RosterFlow -->
-      <a href="" class="project-card project-link">
-        <div class="project-thumb">
-          <img src="{{ '/assets/img/rosterflow.png' | relative_url }}" alt="RosterFlow Logo">
-        </div>
-
-        <div class="project-body">
-          <h3>RosterFlow</h3>
-          <p>
-            An industry-focused white-label platform for labels, teams and artists.
-          </p>
-
-          <div class="project-meta">
-            <div class="meta-tags">
-              <span class="meta-tag">Next.js</span>
-              <span class="meta-tag">Firebase</span>
-              <span class="meta-tag">TypeScript</span>
-              <span class="meta-tag">Artists</span>
-              <span class="meta-tag">Label management</span>
-            </div>
-     </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- RIGHT SIDE: META QUEST PANEL -->
-    <div class="projects-right glass-block meta-panel">
-      <div class="meta-panel-inner">
-        <img
-          class="meta-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/1/19/Meta_Platforms_Inc._logo.svg"
-          alt="Meta Logo"
-        >
-        <a
-          href="https://www.meta.com/experiences/?utm_source=sneksoft"
-          target="_blank"
-          class="m3-button m3-button-filled meta-button"
-        >
-          View on Quest Store
-        </a>
-      </div>
-    </div>
-
-  </div>
-
+<section class="hero-image-shell">
+  <img
+    src="{{ '/assets/img/sneksoft large.png' | relative_url }}"
+    alt="Sneksoft Hero Image"
+    class="hero-img"
+  >
 </section>
+
+<section class="simple-welcome">
+  <h1>Welcome to Sneksoft Studios!!</h1>
+
+  <p>
+  Sneksoft Studios is all about making experiences that feel fun the moment you jump in. We love building worlds you can get lost in, systems that feel smooth and satisfying to use, and moments that make you think “yeah, this is actually sick.”
+Our focus is simple: create games and tools that put players first. No clutter, no over-complication—just clean, polished experiences that feel good every time you pick them up. Whether you’re exploring a world, messing around with friends, or just testing out something new, we want everything we make to feel intuitive and genuinely enjoyable.
+We’re a small team, but we put a lot of heart into what we build. At the end of the day, we’re gamers too—and we want to craft experiences you’ll want to come back to, share with your mates, and keep discovering fresh moments in.
+  </p>
+</section>
+

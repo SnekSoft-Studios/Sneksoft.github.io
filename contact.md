@@ -37,7 +37,7 @@ permalink: /contact/
       </a>
 
       <!-- Discord -->
-      <a class="contact-pill discord" href="https://discord.gg/yourserver" target="_blank">
+      <a class="contact-pill discord" href="https://discord.gg/bXUMBDKZVx" target="_blank">
         <span class="icon">
           <svg width="20" height="20" viewBox="0 0 24 24" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
 

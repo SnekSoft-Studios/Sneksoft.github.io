@@ -100,11 +100,13 @@ body::before {
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-pill);
-  padding: 2px;
-  background: conic-gradient(from 220deg, #22c55e, #6366f1, #ec4899, #22c55e);
+  width: 84px;
+  height: 84px;
+  background-image: url('/assets/img/sneksoft-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .brand-orb {
@@ -120,7 +122,207 @@ body::before {
   display: flex;
   flex-direction: column;
 }
+.hero-image-shell {
+  width: 100%;
+  margin: 0 auto 2rem;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  max-width: 1200px;
+}
+.project-thumb img.project-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  display: block;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+/* TEAM PAGE */
 
+/* Hero */
+.team-hero {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 1rem 1.5rem;
+}
+
+.team-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-hero p {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* Staff Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+.team-card {
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: var(--radius-xl);
+}
+
+.team-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 1rem;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.team-role {
+  display: block;
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 0.6rem;
+}
+
+/* Behind the Scenes Wheel */
+.photo-wheel-section {
+  text-align: center;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+}
+
+.photo-wheel-section h2 {
+  font-size: 2rem;
+}
+
+.photo-wheel-subtitle {
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.photo-wheel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: hidden;
+  padding: 1rem 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.wheel-item {
+  flex: 0 0 auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+}
+
+.wheel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.simple-welcome {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.simple-welcome h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.simple-welcome p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+/* Section heading */
+.section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+/* CARD IMAGE COMPONENTS */
+.highlight-card {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  padding: 0;
+}
+
+.highlight-thumb {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.highlight-body {
+  padding: 1.2rem 1.4rem;
+}
+
+.highlight-body h3 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.25rem;
+}
+
+.highlight-body p {
+  opacity: 0.9;
+  margin-bottom: 0.6rem;
+}
+
+.highlight-link {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Highlights */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1050px;
+  margin: 0 auto 4rem;
+}
+
+.highlight-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.highlight-link {
+  margin-top: 0.8rem;
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Community CTA */
+.community-banner {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 850px;
+  margin: 0 auto 3rem;
+}
 .brand-title {
   font-family: var(--font-display);
   font-size: 1.02rem;
