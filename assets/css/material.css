@@ -998,48 +998,45 @@ body::before {
     margin-bottom: 0.75rem;
   }
 }
-.discord-chip {
+.chip-discord {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 
-  padding: 10px 18px;
+  padding: 0.75rem 1.65rem;
+  border-radius: 999px;
+
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
 
-  border-radius: 999px;
-  color: #fff;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.35);
 
-  background: linear-gradient(135deg, #5865F2, #4752C4);
-  border: 1px solid rgba(120, 130, 255, 0.4);
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+    linear-gradient(135deg, #6a5bff, #4cc3ff);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 
-  box-shadow:
-    0 4px 14px rgba(88, 101, 242, 0.35),
-    inset 0 0 12px rgba(255,255,255,0.06);
-
-  backdrop-filter: blur(12px);
-  transition: all 0.22s ease;
+  backdrop-filter: blur(8px);
+  transition: 0.25s ease;
 }
 
-/* Hover effect */
-.discord-chip:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow:
-    0 6px 18px rgba(88, 101, 242, 0.55),
-    inset 0 0 14px rgba(255,255,255,0.09);
+.chip-discord:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(130, 160, 255, 0.45);
 }
 
-/* Active effect */
-.discord-chip:active {
+.chip-discord:active {
   transform: scale(0.97);
 }
 
-/* Logo styling */
-.discord-chip svg {
+/* Icon */
+.chip-icon {
   width: 20px;
   height: 20px;
-  fill: white;
-  opacity: 0.95;
-  flex-shrink: 0;
+  color: #7289da;
+  pointer-events: none;
 }
