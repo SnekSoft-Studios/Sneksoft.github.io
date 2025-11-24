@@ -16,17 +16,15 @@ permalink: /team/
 <section class="team-grid">
 
   <!-- STAFF MEMBER 1 -->
- <div class="team-card">
-  <div class="team-photo">
-    <img src="/assets/img/staff/dm.png" alt="Dan">
-  </div>
+<div class="team-card">
+  <img src="{{ '/assets/img/staff/dan.png' | relative_url }}" alt="Daniel McVittie" class="team-avatar">
 
   <div class="team-info">
-    <h2>Dan</h2>
+    <h3 class="team-name">Dan</h3>
     <p class="team-role">Lead Developer • Founder</p>
-    <p class="team-desc">
-      Builder of systems, breaker of builds. Handles VR, FiveM, backend tools and
-      everything chaotic in-between.
+    <p class="team-bio">
+      Builder of systems, breaker of builds. Handles VR, FiveM,
+      backend tools and everything chaotic in-between.
     </p>
   </div>
 </div>
