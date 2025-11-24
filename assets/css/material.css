@@ -98,15 +98,14 @@ body::before {
   text-decoration: none;
   color: inherit;
 }
-
 .brand-logo {
-  width: 84px;
-  height: 84px;
-  background-image: url('/assets/img/sneksoft-logo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 0;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 .brand-orb {
