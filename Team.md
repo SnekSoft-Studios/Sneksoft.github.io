@@ -18,7 +18,7 @@ permalink: /team/
   <!-- STAFF MEMBER 1 -->
  <div class="team-card">
   <div class="team-photo">
-    <img src="/assets/img/staff/dm.png" alt="Daniel McVittie">
+    <img src="/assets/img/staff/dm.png" alt="Dan">
   </div>
 
   <div class="team-info">
