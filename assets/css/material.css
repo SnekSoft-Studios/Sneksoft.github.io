@@ -85,41 +85,6 @@ body::before {
   backdrop-filter: blur(18px);
 }
 
-/* Logo + title wrapper */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-/* FIXED SIZE IMAGE LOGO */
-.brand-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px; /* subtle rounding */
-  object-fit: contain;
-  padding: 0;
-  background: none; /* remove old orb gradient background */
-  display: block;
-}
-
-/* Text block */
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.brand-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.brand-subtitle {
-  font-size: 0.8rem;
-  opacity: 0.7;
-}
 
 /* Nav links */
 .nav-links a {
@@ -347,16 +312,6 @@ body::before {
   padding: 3rem 1rem;
   max-width: 850px;
   margin: 0 auto 3rem;
-}
-.brand-title {
-  font-family: var(--font-display);
-  font-size: 1.02rem;
-  letter-spacing: -0.02em;
-}
-
-.brand-subtitle {
-  font-size: 0.74rem;
-  color: var(--text-subtle);
 }
 
 /* Nav links */
@@ -999,4 +954,52 @@ body::before {
 /* Icon sizing */
 .contact-pill .icon svg {
   display: block;
+}
+/* Wrapper for logo + title */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* LOGO FIX — correct size, stops giant scaling */
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain; /* prevents warping */
+  display: block;
+}
+
+/* Brand text */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.brand-subtitle {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  color: white;
+}
+
+/* Navbar alignment */
+.shell-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav links */
+.nav-links a {
+  padding: 0 14px;
+  font-size: 0.9rem;
+  color: white;
 }
