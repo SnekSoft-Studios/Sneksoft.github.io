@@ -85,41 +85,40 @@ body::before {
   backdrop-filter: blur(18px);
 }
 
-/* Logo + text layout */
-.brand-block {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  gap: 12px;
-}
-.brand-logo {
+/* Logo + title wrapper */
+.brand {
   display: flex;
   align-items: center;
   gap: 12px;
   text-decoration: none;
-}
-/* REAL logo image */
-.brand-logo-img {
-  width: 48px;      /* shrink logo */
-  height: 48px;
-  object-fit: contain;
-  border-radius: 12px; /* optional: soften edges */
 }
 
-/* Text */
-.brand-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #fff;
+/* FIXED SIZE IMAGE LOGO */
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px; /* subtle rounding */
+  object-fit: contain;
+  padding: 0;
+  background: none; /* remove old orb gradient background */
+  display: block;
 }
+
+/* Text block */
 .brand-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  line-height: 1.1;
 }
+
+.brand-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
 .brand-subtitle {
   font-size: 0.8rem;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* Nav links */
