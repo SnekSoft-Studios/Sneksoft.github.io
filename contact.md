@@ -17,36 +17,20 @@ permalink: /contact/
 
     <h2 class="section-label" style="text-align:center;">How to reach us</h2>
 
-    <!-- CONTACT PILLS -->
-    <div class="contact-pill-row">
+   <div class="contact-image-row">
 
+  <a href="https://discord.gg/bXUMBDKZVx" class="contact-img-link">
+    <img src="{{'/assets/img/contact/discord.png' | relative_url }}" alt="Discord" class="contact-img">
+  </a>
 
-    <!-- GitHub Button -->
-<a href="https://github.com/SnekSoft-Studios/">
-  <button class="snek-btn">
-    <img
-      src="https://e7.pngegg.com/pngimages/571/879/png-clipart-github-computer-icons-icon-design-branching-github-logo-computer-wallpaper.png"
-      class="btn-icon-img"
-      alt="Git Logo"
-    />
+  <a href="https://github.com/SnekSoft-Studios" class="contact-img-link">
+    <img src="{{'/assets/img/contact/github.png'| relative_url}}" alt="GitHub" class="contact-img">
+  </a>
 
-  </button>
-</a>
+  <a href="mailto:contact@sneksoft.dev" class="contact-img-link">
+    <img src="{{'/assets/img/contact/email.png'| relative_url}}" alt="Email" class="contact-img">
+  </a>
 
-<!-- Discord Button -->
-<a href="https://discord.com/bXUMBDKZVx">
-  <button class="snek-btn">
-    <img
-      src="https://image.pngaaa.com/867/704867-middle.png"
-      class="btn-icon-img"
-      alt="Discord Logo"
-    />
-
-  </button>
-</a>
-
-    </div>
-
-  </div>
+</div>
 
 </section>

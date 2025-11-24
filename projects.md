@@ -36,7 +36,7 @@ permalink: /projects/
     <a href="/projects/" class="project-card-link">
   <article class="project-card">
     <div class="project-thumb">
-      <img src="{{'/assets/img/rosterflow.png' | relative_url }}" alt="Luna RP Preview" class="project-image">
+      <img src="{{'/assets/img/rosterflow.png' | relative_url }}" alt="Rosterflow" class="project-image">
     </div>
 
     <div class="project-body">
