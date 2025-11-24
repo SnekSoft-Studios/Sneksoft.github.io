@@ -1,9 +1,3 @@
-/* =========================================================
-   Sneksoft material.css — pure CSS, no Tailwind
-   ======================================================= */
-
-/* ---------- Design Tokens ---------- */
-
 :root {
   --accent: #b388ff;
   --accent-strong: #e5d4ff;
@@ -36,8 +30,6 @@
     radial-gradient(circle at bottom, rgba(4, 7, 18, 0.9), transparent 60%);
 }
 
-/* ---------- Reset ---------- */
-
 *,
 *::before,
 *::after {
@@ -63,7 +55,6 @@ body {
   position: relative;
 }
 
-/* Dark overlay – no blur here, keeps content sharp */
 body::before {
   content: "";
   position: fixed;
@@ -80,15 +71,12 @@ body::before {
   padding-inline: 16px;
 }
 
-/* ---------- Header / Top Bar ---------- */
-
 .site-header {
   max-width: 1180px;
   margin: 22px auto 0;
   padding-inline: 16px;
 }
 
-/* Bigger, glassy nav bar */
 .shell-topbar {
   display: flex;
   justify-content: space-between;
@@ -103,7 +91,6 @@ body::before {
   border: 1px solid rgba(148, 163, 184, 0.4);
 }
 
-/* Logo + brand text */
 .brand {
   display: flex;
   align-items: center;
@@ -137,7 +124,6 @@ body::before {
   color: #ffffff;
 }
 
-/* Nav links */
 .nav-links {
   display: flex;
   gap: 12px;
@@ -158,8 +144,6 @@ body::before {
   opacity: 1;
   border-color: rgba(148, 163, 184, 0.9);
 }
-
-/* ---------- Generic Typography ---------- */
 
 .fancy-title {
   font-family: var(--font-display);
@@ -190,8 +174,6 @@ body::before {
   margin-bottom: 6px;
 }
 
-/* ---------- Glass Blocks / Cards ---------- */
-
 .glass-block {
   background:
     radial-gradient(circle at top left, rgba(148, 163, 184, 0.20), transparent 60%),
@@ -212,8 +194,6 @@ body::before {
     radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.18), transparent 55%),
     rgba(15, 23, 42, 0.96);
 }
-
-/* ---------- Hero (index) ---------- */
 
 .hero-image-shell {
   width: 100%;
@@ -253,8 +233,6 @@ body::before {
   opacity: 0.9;
   line-height: 1.7;
 }
-
-/* ---------- Highlights (index cards) ---------- */
 
 .highlight-grid {
   display: grid;
@@ -306,16 +284,12 @@ body::before {
   display: inline-block;
 }
 
-/* ---------- Community Banner ---------- */
-
 .community-banner {
   text-align: center;
   padding: 3rem 1rem;
   max-width: 850px;
   margin: 0 auto 3rem;
 }
-
-/* ---------- Projects Shell ---------- */
 
 .app-shell {
   margin-top: 24px;
@@ -330,7 +304,6 @@ body::before {
   -webkit-backdrop-filter: blur(26px);
 }
 
-/* Tabs (if used) */
 .shell-tabs {
   display: flex;
   align-items: center;
@@ -356,7 +329,6 @@ body::before {
   box-shadow: 0 0 0 1px rgba(179, 136, 255, 0.4);
 }
 
-/* Filter row */
 .shell-filter-row {
   display: flex;
   justify-content: space-between;
@@ -394,7 +366,6 @@ body::before {
   color: var(--text-main);
 }
 
-/* Layout grid: left cards + right panel */
 .shell-grid {
   display: grid;
   grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.7fr);
@@ -408,7 +379,6 @@ body::before {
   gap: 14px;
 }
 
-/* Project header text */
 .project-section {
   padding-top: 2rem;
 }
@@ -420,7 +390,6 @@ body::before {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Project card */
 .project-card {
   display: flex;
   gap: 1rem;
@@ -502,7 +471,6 @@ body::before {
   font-size: 0.78rem;
 }
 
-/* Quest store button (right column) */
 .quest-store-btn {
   display: inline-flex;
   align-items: center;
@@ -544,7 +512,6 @@ body::before {
   opacity: 0.95;
 }
 
-/* Small Meta icon */
 .meta-logo {
   width: 22px;
   height: 22px;
@@ -559,8 +526,6 @@ body::before {
   opacity: 1;
   transform: scale(1.06);
 }
-
-/* ---------- Team Page ---------- */
 
 .team-shell {
   max-width: 960px;
@@ -619,14 +584,12 @@ body::before {
   color: rgba(226, 232, 240, 0.92);
 }
 
-/* Behind-the-scenes card */
 .bts-card {
   margin-top: 2.5rem;
   padding: 1.75rem 2rem;
   border-radius: 24px;
 }
 
-/* Photo wheel */
 .photo-wheel-section {
   text-align: center;
   max-width: 900px;
@@ -669,8 +632,6 @@ body::before {
   height: 100%;
   object-fit: cover;
 }
-
-/* ---------- About Page ---------- */
 
 .about-cards {
   display: grid;
@@ -718,7 +679,6 @@ body::before {
   opacity: 0.9;
 }
 
-/* Tech grid */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -747,7 +707,6 @@ body::before {
   opacity: 0.95;
 }
 
-/* Language chips row */
 .lang-chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -755,7 +714,6 @@ body::before {
   margin-top: 0.75rem;
 }
 
-/* Language chip base */
 .lang-chip {
   display: inline-flex;
   align-items: center;
@@ -801,7 +759,6 @@ body::before {
   border-color: var(--chip-border, rgba(255, 255, 255, 0.5));
 }
 
-/* Per-language accents */
 .lang-chip[lua]   { --chip-glow: #4c6cffaa; --chip-border: #6c82ff; }
 .lang-chip[ts]    { --chip-glow: #2f8fffaa; --chip-border: #1f7fff; }
 .lang-chip[react] { --chip-glow: #53c1deaa; --chip-border: #53c1de; }
@@ -812,8 +769,6 @@ body::before {
 .lang-chip[html]  { --chip-glow: #ff7a42aa; --chip-border: #ff6b2b; }
 .lang-chip[css]   { --chip-glow: #49a9fdaa; --chip-border: #2a91ff; }
 .lang-chip[js]    { --chip-glow: #ffe347aa; --chip-border: #ffd500; }
-
-/* ---------- Contact Page ---------- */
 
 .contact-card {
   padding: 2.2rem;
@@ -830,7 +785,6 @@ body::before {
   font-weight: 700;
 }
 
-/* If you still use pill-style buttons anywhere */
 .contact-pill-row {
   display: flex;
   justify-content: center;
@@ -887,8 +841,6 @@ body::before {
   display: block;
 }
 
-/* Image-based contact row (current version) */
-
 .contact-image-row {
   display: flex;
   justify-content: center;
@@ -916,8 +868,6 @@ body::before {
   transform: translateY(-6px) scale(1.07);
   filter: drop-shadow(0 0 12px rgba(120, 200, 255, 0.55));
 }
-
-/* ---------- Generic Buttons (Material-style) ---------- */
 
 .m3-btn {
   display: flex;
@@ -958,8 +908,6 @@ body::before {
   transform: translateY(-3px);
 }
 
-/* ---------- Footer ---------- */
-
 .site-footer {
   max-width: 1180px;
   margin: 12px auto 24px;
@@ -968,8 +916,6 @@ body::before {
   color: var(--text-subtle);
   text-align: center;
 }
-
-/* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
   .shell-grid {
@@ -1017,4 +963,84 @@ body::before {
   .team-avatar {
     margin-bottom: 0.75rem;
   }
+}
+.store-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border-radius: 24px;
+
+  background: rgba(15, 23, 42, 0.82);
+
+
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(153, 242,99), transparent 65%),
+    radial-gradient(circle at 80% 80%, rgba(64,200,245), transparent 70%);
+
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.45),
+    inset 0 0 32px rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 26px 55px rgba(0,0,0,0.55),
+    inset 0 0 42px rgba(255,255,255,0.06);
+}
+
+.store-thumb {
+  width: 100%;
+  height: 180px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.05);
+
+  box-shadow: inset 0 0 60px rgba(0,0,0,0.25);
+}
+
+.store-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-card h3 {
+  margin: 16px 0 6px;
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.store-card p {
+  color: #d0d7e6;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.store-buy-btn {
+  margin-top: 16px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .95rem;
+
+  background: linear-gradient(135deg, #7b2ff7, #00c6ff);
+  border: 0;
+  color: #fff;
+
+  box-shadow: 0 8px 28px rgba(0,0,0,0.35);
+  transition: 0.2s ease;
+}
+
+.store-buy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.45);
 }
