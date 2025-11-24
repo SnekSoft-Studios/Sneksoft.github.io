@@ -998,3 +998,48 @@ body::before {
     margin-bottom: 0.75rem;
   }
 }
+.discord-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 999px;
+  color: #fff;
+
+  background: linear-gradient(135deg, #5865F2, #4752C4);
+  border: 1px solid rgba(120, 130, 255, 0.4);
+
+  box-shadow:
+    0 4px 14px rgba(88, 101, 242, 0.35),
+    inset 0 0 12px rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(12px);
+  transition: all 0.22s ease;
+}
+
+/* Hover effect */
+.discord-chip:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 6px 18px rgba(88, 101, 242, 0.55),
+    inset 0 0 14px rgba(255,255,255,0.09);
+}
+
+/* Active effect */
+.discord-chip:active {
+  transform: scale(0.97);
+}
+
+/* Logo styling */
+.discord-chip svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  opacity: 0.95;
+  flex-shrink: 0;
+}
