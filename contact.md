@@ -32,5 +32,3 @@ permalink: /contact/
   </a>
 
 </div>
-
-</section>

@@ -7,7 +7,7 @@ permalink: /store/
 <section class="app-shell page-shell">
   <h1>Store</h1>
   <p>Your gateway to all things Snek. From powerful FiveM tools to immersive VR content and polished game-ready assets, everything here is built with the same care, creativity, and playful spirit that fuels Sneksoft. Whether you’re leveling up your server, upgrading your workflow, or diving deeper into our worlds, this is the place to gear up and support the studio.
-Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
+Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚</p>
 
   <div class="list-column" style="margin-top: 18px;">
 
@@ -15,7 +15,7 @@ Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
 <a href="https://www.meta.com/en-gb/experiences/z0n3/32539964462316328/" class="project-card-link">
   <article class="project-card">
     <div class="project-thumb">
-      <img src="{{ '/assets/img/meta.webp' | relative_url }}" alt="Luna RP Preview" class="project-image">
+      <img src="{{ '/assets/img/meta.png' | relative_url }}" alt="Luna RP Preview" class="project-image">
     </div>
 
     <div class="project-body">
@@ -37,7 +37,7 @@ Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
     <a href="" class="project-card-link">
   <article class="project-card">
     <div class="project-thumb">
-      <img src="{{ '/assets/img/meta.webp' | relative_url }}" alt="Luna RP Preview" class="project-image">
+      <img src="{{ '/assets/img/meta.png' | relative_url }}" alt="Luna RP Preview" class="project-image">
     </div>
 
     <div class="project-body">
@@ -59,7 +59,7 @@ Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
 <a href="https://makerworld.com/en/@meowmeowhiss12" class="project-card-link">
   <article class="project-card">
     <div class="project-thumb">
-      <img src="{{ '/assets/img/bambu' | relative_url }}" alt="Luna RP Preview" class="project-image">
+      <img src="{{ '/assets/img/bambu.png' | relative_url }}" alt="Luna RP Preview" class="project-image">
     </div>
 
     <div class="project-body">
@@ -76,4 +76,3 @@ Slide in, explore, and enjoy the shiny Snek-crafted goodies. 🐍💚p>
   </article>
 </a>
   </div>
-</section>
