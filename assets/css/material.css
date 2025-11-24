@@ -1,115 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-tailwind.config = {
-  darkMode: 'class',
-  theme: {
-    extend: {}
-  }
-}
-
 :root {
   --accent: #b388ff;
   --accent-strong: #e5d4ff;
-  --accent-soft: rgba(179, 136, 255, 0.15);
 
-  --shell-bg: rgba(15, 23, 42, 0.95);
-  --shell-border: rgba(148, 163, 184, 0.35);
+  --shell-bg: rgba(10, 14, 25, 0.78);
+  --shell-border: rgba(148, 163, 184, 0.45);
 
-  /* Neon glass gradient tint (Option C) */
-  --glass-gradient: linear-gradient(
-      145deg,
-      rgba(255,255,255,0.18),
-      rgba(179,136,255,0.22),
-      rgba(0,198,255,0.22)
-  );
+  --card-bg: rgba(15, 20, 34, 0.78);
+  --card-border: rgba(148, 163, 184, 0.25);
 
-  --text-main: #e5e7eb;
-  --text-subtle: #9ca3af;
+  --text: #f1f5f9;
+  --text-dim: #b8c0cc;
 
   --radius-xl: 32px;
-  --radius-lg: 22px;
-  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
   --radius-pill: 999px;
 
-  --shadow-shell: 0 32px 80px rgba(0,0,0,0.75);
-  --shadow-card: 0 22px 45px rgba(0,0,0,0.50);
+  --shadow-strong: 0 28px 65px rgba(0,0,0,0.55);
+  --shadow-card: 0 16px 40px rgba(0,0,0,0.35);
 
-  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Space Grotesk", system-ui, sans-serif;
-
-  --bg-overlay:
-    radial-gradient(circle at top, rgba(15,23,42,0.55), transparent 55%),
-    radial-gradient(circle at bottom, rgba(4,7,18,0.90), transparent 60%);
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-}
-
-html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  min-height: 100vh;
   font-family: var(--font-sans);
-  color: var(--text-main);
-
   background-image: url("../img/background.gif");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  color: var(--text);
 }
-
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: var(--bg-overlay);
+  background: radial-gradient(circle at top, rgba(0,0,0,0.4), transparent 60%),
+              radial-gradient(circle at bottom, rgba(0,0,0,0.7), transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
 
-.site-header {
-  max-width: 1180px;
-  margin: 18px auto 0;
-  padding-inline: 16px;
-}
-
 .shell-topbar {
+  max-width: 1180px;
+  margin: 24px auto;
+  padding: 22px 32px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 28px;
-  border-radius: 18px;
 
-  background: rgba(6,10,22,0.68);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: var(--shell-bg);
+  border: 1px solid var(--shell-border);
+  border-radius: var(--radius-xl);
 
-  border: 1px solid rgba(148,163,184,0.40);
-  box-shadow: 0 22px 55px rgba(0,0,0,0.65);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow: var(--shadow-strong);
 }
-
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .brand-logo {
-  width: 48px;
-  height: 48px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
 }
 
@@ -120,147 +86,116 @@ body::before {
 }
 
 .brand-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .brand-subtitle {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   opacity: 0.75;
-  color: white;
-}
-
-/* Nav links */
-.nav-links {
-  display: flex;
-  gap: 10px;
 }
 
 .nav-links a {
-  padding: 6px 14px;
+  margin-left: 10px;
+  padding: 10px 18px;
+
   border-radius: var(--radius-pill);
-  font-size: 0.86rem;
-  text-decoration: none;
-  color: var(--text-main);
-  opacity: 0.85;
   border: 1px solid transparent;
-  transition: 0.18s ease;
+
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.9;
+
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover {
   opacity: 1;
-  border-color: rgba(148,163,184,0.9);
+  border-color: rgba(255,255,255,0.25);
 }
 
-.glass-card,
-.project-card,
-.highlight-card,
 .glass-block,
+.project-card,
 .team-card,
-.about-card,
 .contact-card {
-  background: linear-gradient(
-        rgba(15,23,42,0.90),
-        rgba(15,23,42,0.94)
-      ),
-      var(--glass-gradient);
-
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(255,255,255,0.10);
+
+  box-shadow: var(--shadow-card);
 
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
 
-  box-shadow: var(--shadow-card);
-}
+  padding: 24px 28px;
+  margin-bottom: 30px;
 
-
-.hero-image-shell {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto 2rem;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-
-  background: var(--glass-gradient);
-  border: 1px solid rgba(255,255,255,0.12);
-  box-shadow: var(--shadow-shell);
-
-  backdrop-filter: blur(20px);
-}
-
-.hero-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  background-image:
+    radial-gradient(circle at top left, rgba(255,255,255,0.06), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.03), transparent 60%),
+    var(--card-bg);
 }
 
 .project-card {
   display: flex;
-  gap: 1rem;
-  padding: 20px;
+  gap: 1.5rem;
+  padding: 24px;
 }
 
 .project-thumb {
   width: 160px;
   height: 160px;
-  border-radius: 16px;
-  overflow: hidden;
-  flex-shrink: 0;
+  border-radius: var(--radius-lg);
 
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 
 .project-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 14px;
 }
 
-/* Text inside card */
-.project-card h3,
-.project-card a {
-  color: white;
+.project-card h3 {
+  margin-bottom: 6px;
+  font-size: 1.4rem;
   font-weight: 700;
-  font-size: 1.2rem;
 }
 
-.project-card p {
-  color: #d8d8e5;
-  line-height: 1.55;
+.meta-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.highlight-card {
-  overflow: hidden;
-}
+.meta-tag {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
 
-.highlight-thumb {
-  width: 100%;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
+  background: rgba(255,255,255,0.1);
+  color: #dcdcff;
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 .team-card {
-  padding: 1.75rem 2rem;
-  border-radius: 24px;
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
 }
 
 .team-avatar {
   width: 96px;
   height: 96px;
-  border-radius: 20px;
+  border-radius: var(--radius-lg);
   object-fit: cover;
 }
-
-.about-card {
-  padding: 20px;
-  border-radius: var(--radius-lg);
-}
-
 
 .contact-image-row {
   display: flex;
@@ -275,31 +210,27 @@ body::before {
 }
 
 .contact-img {
-  width: 78px;
-  height: 78px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 
-  background: rgba(255,255,255,0.06);
-  padding: 12px;
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.18);
+  padding: 12px;
 
-  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 .contact-img-link:hover .contact-img {
-  transform: translateY(-6px) scale(1.08);
-  filter: drop-shadow(0 0 14px rgba(120,200,255,0.7));
+  transform: translateY(-6px) scale(1.06);
+  filter: drop-shadow(0 0 14px rgba(120,200,255,0.55));
 }
 
-@media (max-width: 720px) {
-  .project-card { flex-direction: column; }
-  .project-thumb {
-    width: 100%;
-    max-width: 260px;
-    height: 160px;
-  }
-
-  .team-card { text-align: center; flex-direction: column; }
-  .team-avatar { margin-bottom: 0.75rem; }
+.site-footer {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.85rem;
+  margin: 40px 0;
 }
