@@ -38,7 +38,7 @@ body {
   color: var(--text-main);
 
   /* Background image is relative to this CSS file */
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -439,79 +439,65 @@ body::before {
   gap: 14px;
 }
 
-.project-card {
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 12px;
-  padding: 12px;
-  border-radius: var(--radius-lg);
-  background: var(--card-bg);
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  box-shadow: var(--shadow-card);
+/* Project titles */
+.project-card h3,
+.project-card a {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 
-/* “Thumbnail” */
-
-.project-thumb {
-  border-radius: 16px;
-  background-size: cover;
-  background-position: center;
-  min-height: 110px;
-  position: relative;
-  overflow: hidden;
+/* Card body text */
+.project-card p {
+  color: #d8d8e5;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-shadow: 0 0 6px rgba(0,0,0,0.55);
 }
 
-.project-thumb::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at bottom, rgba(0, 0, 0, 0.3), transparent 55%);
-}
-
-/* Different thumbnails per card */
-.project-thumb--vr {
-  background-image: linear-gradient(145deg, #1e293b, #4c1d95);
-}
-.project-thumb--fivem {
-  background-image: linear-gradient(145deg, #1e293b, #b91c1c);
-}
-.project-thumb--web {
-  background-image: linear-gradient(145deg, #1e293b, #0f766e);
-}
-
-.project-body h3 {
-  margin: 0 0 4px;
-  font-size: 0.98rem;
-  font-weight: 600;
-}
-
-.project-body p {
-  margin: 0;
-  font-size: 0.82rem;
-  color: var(--text-subtle);
-}
-
-.project-meta {
-  margin-top: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-}
-
-.meta-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
+/* Tag pills */
 .meta-tag {
-  padding: 2px 8px;
-  border-radius: var(--radius-pill);
-  background: rgba(15, 23, 42, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(255,255,255,0.08);
+  color: #e2e2ff;
+  border: 1px solid rgba(255,255,255,0.1);
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
 }
+
+/* Add a soft backdrop behind each card for better contrast */
+.project-card {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* Improve spacing */
+.project-card .project-body {
+  margin-left: 1rem;
+}
+
+.project-section {
+  padding-top: 2rem;
+}
+
+.projects-header-text {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+/* Make thumbnails rounded + visible */
+.project-thumb img {
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
 .meta-logo {
   width: 22px;
   height: 22px;
