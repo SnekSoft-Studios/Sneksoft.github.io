@@ -34,6 +34,25 @@ permalink: /team/
     </div>
   </div>
 
+  <div class="team-card">
+    <img
+      src="{{'/assets/img/staff/blue.png' | relative_url }}"
+      alt="Bluejay"
+      class="team-avatar"
+    />
+
+    <div class="team-content">
+      <div class="team-heading">
+        <h2 class="team-name">Bluejay</h2>
+        <p class="team-role">Creative Consultant · Immoral support</p>
+      </div>
+
+      <p class="team-bio">
+        Checker of reality, promo helper, a birb.
+      </p>
+    </div>
+  </div>
+
   <!-- Behind the scenes card -->
   <section class="glass-block bts-card">
     <h2 class="fancy-title">Behind the Scenes</h2>
