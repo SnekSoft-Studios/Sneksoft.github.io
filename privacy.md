@@ -7,117 +7,135 @@ permalink: /privacy/
 <section class="app-shell page-shell">
   <h1>Privacy Policy</h1>
   <p><strong>Last updated:</strong> {{ site.time | date: "%Y-%m-%d" }}</p>
+
   <h2>1. Who we are</h2>
-  <p>Sneksoft Studios (“we”, “us”, “our”) builds VR experiences, FiveM systems and supporting web tools. This policy explains how we handle information across:</p>
+  <p>Sneksoft Studios (“we”, “us”, “our”) creates software, games and online tools spanning VR/XR, FiveM servers, web applications, mobile apps and internal management systems. This policy explains how we handle information across all Sneksoft products, including:</p>
   <ul>
-    <li>Our public website and GitHub Pages site</li>
-    <li>VR content (e.g. Meta Quest / PC VR builds)</li>
-    <li>FiveM servers and related tools</li>
-    <li>Internal dashboards, issue trackers and automation tooling</li>
+    <li>Public websites and GitHub Pages sites</li>
+    <li>VR and XR content (e.g. Meta Quest, PC VR, Unity builds)</li>
+    <li>FiveM servers, frameworks and connected tools</li>
+    <li>Mobile applications (Android/iOS)</li>
+    <li>Internal dashboards, automation and developer tooling</li>
   </ul>
 
-  <h2>2. What we do <em>not</em> do</h2>
+  <h2>2. What we do <em>not</em> do</em></h2>
   <ul>
     <li>We do <strong>not</strong> sell your data.</li>
-    <li>We do <strong>not</strong> use your data to build advertising profiles.</li>
-    <li>We do <strong>not</strong> knowingly collect data from children under 13 (or older where local law requires).</li>
+    <li>We do <strong>not</strong> share your data with advertisers or ad networks.</li>
+    <li>We do <strong>not</strong> build advertising profiles.</li>
+    <li>We do <strong>not</strong> knowingly collect data from children under 13 (or higher where local law requires).</li>
   </ul>
 
   <h2>3. Information we may collect</h2>
 
-  <h3>3.1 Website & GitHub Pages</h3>
+  <h3>3.1 Websites & GitHub Pages</h3>
   <ul>
     <li>Standard HTTP logs (IP address, user agent, pages requested, timestamps)</li>
     <li>Basic analytics (e.g. page views, referrers) where enabled</li>
   </ul>
-  <p>This is used to keep the site secure and understand how people discover our projects.</p>
+  <p>This helps us keep sites secure and understand how visitors discover our projects.</p>
 
-  <h3>3.2 VR apps and experiences</h3>
-  <p>When you run a Sneksoft experience in VR (e.g. Meta Quest or PC VR), we may process:</p>
+  <h3>3.2 Mobile apps (Android/iOS)</h3>
   <ul>
-    <li>Platform identifiers provided by the store (e.g. Oculus / Meta account ID token or app-instance ID)</li>
-    <li>Runtime telemetry: crash logs, performance data (FPS, frame timing)</li>
-    <li>High-level interaction events (e.g. “level completed”, “button opened menu”) that do not need your real-world identity</li>
+    <li>Account information you create (email, username, basic profile data)</li>
+    <li>Device and OS information required for performance and debugging</li>
+    <li>Push notification tokens (if you opt in)</li>
+    <li>Crash reports and diagnostics</li>
+    <li>App usage events that do not identify you personally</li>
   </ul>
-  <p>We collect this to keep the experience stable, tune performance, and understand what features actually get used.</p>
+  <p>We do not collect financial data, advertising identifiers, or precise location unless the app explicitly requires it and you consent.</p>
 
-  <h3>3.3 FiveM servers and tools</h3>
-  <p>When you connect to a Sneksoft-operated FiveM server or tooling stack, we typically process:</p>
+  <h3>3.3 VR / XR apps and experiences</h3>
+  <p>When you use a Sneksoft VR title (Meta Quest, PC VR, standalone builds), we may process:</p>
   <ul>
-    <li>Identifiers supplied by Cfx / FiveM (e.g. platform IDs, license / Rockstar ID, Discord ID when linked)</li>
-    <li>Server metadata (connection times, session length, resource errors)</li>
-    <li>Gameplay data stored by the framework (e.g. character ID, inventory, gang membership, job role, in-server finances where applicable)</li>
+    <li>Platform identifiers (e.g. entitlements or app-instance IDs)</li>
+    <li>Crash logs, performance data (FPS, stutter frames)</li>
+    <li>High-level interaction telemetry (e.g. “level completed”, “menu opened”)</li>
+    <li>Controller/hand interactions where needed for gameplay</li>
+    <li>Cloud save data where supported</li>
   </ul>
-  <p>This is needed to run the server, manage characters and enforce server rules. Some data is also used for anti-cheat and abuse prevention.</p>
+  <p>This helps us maintain performance, stability and feature usage analytics. We follow all Meta Horizon data usage rules.</p>
 
-  <h3>3.4 Support, bug reports & feedback</h3>
-  <p>If you contact us or submit feedback/bug reports (in-game, on Discord, or via email), we may receive:</p>
+  <h3>3.4 FiveM servers and tools</h3>
+  <p>When you connect to a Sneksoft-operated FiveM server or use our connected tools, we may process:</p>
   <ul>
-    <li>Your chosen display name and contact details</li>
-    <li>Issue details, logs or screenshots you share</li>
-    <li>Any information you voluntarily include in the message</li>
+    <li>Identifiers provided by Cfx/FiveM (license, platform IDs, Rockstar ID)</li>
+    <li>Discord ID if linked for whitelisting or permissions</li>
+    <li>Gameplay data (character ID, inventory, job, finances, gang membership)</li>
+    <li>Session metadata (connection times, resource errors, anti-cheat flags)</li>
   </ul>
-  <p>We only use this to reply, investigate issues and improve the project.</p>
+  <p>This is necessary to run the server, maintain integrity, enforce rules, and prevent abuse or cheating.</p>
+
+  <h3>3.5 Support, feedback & bug reports</h3>
+  <p>If you contact us through email, Discord, web forms, or in-app systems, we may receive:</p>
+  <ul>
+    <li>Your chosen name or username</li>
+    <li>Contact details you provide</li>
+    <li>Information from logs, screenshots or files you send</li>
+    <li>Any details included in your message</li>
+  </ul>
+  <p>This is used solely to reply, investigate issues, and improve services.</p>
 
   <h2>4. How we use your information</h2>
   <ul>
-    <li><strong>To provide the service</strong> – run VR builds, servers and web tools.</li>
-    <li><strong>To keep things secure</strong> – detect abuse, exploits and technical issues.</li>
-    <li><strong>To improve performance and UX</strong> – understand which features matter and where things break.</li>
-    <li><strong>To communicate with you</strong> – answer support queries or project-related questions.</li>
+    <li><strong>Service delivery</strong> – running apps, VR titles, game servers and tools.</li>
+    <li><strong>Security & abuse prevention</strong> – stopping exploits, detecting cheating, protecting user accounts.</li>
+    <li><strong>Performance & user experience improvements</strong> – debugging crashes and tuning features.</li>
+    <li><strong>Communication</strong> – responding to support requests or user reports.</li>
   </ul>
 
   <h2>5. Legal bases (where relevant)</h2>
-  <p>Where privacy laws like the UK GDPR / EU GDPR apply, we typically rely on:</p>
+  <p>Where laws like UK GDPR/EU GDPR apply, we rely on:</p>
   <ul>
-    <li><strong>Performance of a contract</strong> – to provide access to the game, service or tool you requested.</li>
-    <li><strong>Legitimate interests</strong> – to maintain security, prevent abuse, and improve our projects in a way that respects your rights.</li>
-    <li><strong>Consent</strong> – when we rely on platform-level consent (e.g. platform analytics toggles) or optional features you explicitly enable.</li>
+    <li><strong>Performance of a contract</strong> – providing the app, server or service you use.</li>
+    <li><strong>Legitimate interests</strong> – maintaining security, preventing abuse, improving gameplay and user experience.</li>
+    <li><strong>Consent</strong> – for optional features like analytics or notifications (depending on platform).</li>
   </ul>
 
   <h2>6. Data sharing</h2>
-  <p>We may share limited data with:</p>
+  <p>We may share limited information with the following categories, strictly as needed:</p>
   <ul>
-    <li><strong>Platform providers</strong> – e.g. Meta, Cfx / FiveM, Steam or similar, as required for platform features, moderation or analytics.</li>
-    <li><strong>Infrastructure providers</strong> – e.g. hosting, database and logging providers that help us run the services.</li>
-    <li><strong>Communication tools</strong> – e.g. Discord or email providers when you talk to us there.</li>
+    <li><strong>Platform providers</strong> – Meta, Steam, Cfx/FiveM, Google, Apple, etc.</li>
+    <li><strong>Infrastructure providers</strong> – hosting, storage, databases, crash logging (e.g. Firebase, Cloudflare, S3).</li>
+    <li><strong>Communication systems</strong> – Discord, email services, support platforms.</li>
   </ul>
-  <p>We do not sell your data or share it with third parties for their own advertising purposes.</p>
+  <p>We do not sell data or share it for advertising or profiling.</p>
 
   <h2>7. Storage & retention</h2>
-  <p>We keep information only for as long as needed to run the service, debug issues, and meet legal or platform requirements. Retention times may differ for, for example, security logs vs. routine gameplay data. Where possible, we aggregate or anonymise data over time.</p>
+  <p>We keep data only for as long as required to operate the relevant service, comply with platform rules, and resolve disputes or technical issues. Where possible, we delete, anonymise or aggregate data over time.</p>
 
   <h2>8. Your rights</h2>
-  <p>Depending on where you live, you may have rights such as:</p>
+  <p>Depending on your region, you may have rights such as:</p>
   <ul>
-    <li>Access: ask what data we hold about you.</li>
-    <li>Correction: request fixes to inaccurate data.</li>
-    <li>Deletion: ask us to delete certain information, where we are not required to keep it.</li>
-    <li>Restriction or objection: in some cases, limit or object to certain types of processing.</li>
+    <li>Requesting access to your data</li>
+    <li>Requesting corrections</li>
+    <li>Requesting deletion (see our Data Deletion page)</li>
+    <li>Limiting or objecting to certain processing</li>
   </ul>
-  <p>If you’d like to exercise any of these rights, contact us using the details below. We may need to verify that you are the account holder / player before acting on a request.</p>
+  <p>To exercise your rights, contact us using the details below. We may need to confirm your identity for security reasons.</p>
 
-  <h2>9. Data for Meta / Horizon / platform requirements</h2>
-  <p>For VR content distributed via platforms such as Meta Quest / Horizon:</p>
+  <h2>9. Platform-specific requirements (Meta, Google, Apple)</h2>
+  <p>For VR and mobile platforms, we follow all applicable policies:</p>
   <ul>
-    <li>We only access platform-provided data that is required for gameplay, platform features (like entitlements) or analytics you’ve enabled at the platform level.</li>
-    <li>We follow the platform’s data-usage rules, including respecting account-level privacy settings where those apply.</li>
-    <li>If the platform provides a way to request data deletion or account removal for a Sneksoft title, we will honour those requests within the time frames required by the platform.</li>
+    <li>Meta Horizon Data Use Policy</li>
+    <li>Google Play User Data & Families policies</li>
+    <li>Apple App Store privacy requirements</li>
   </ul>
+  <p>We only use platform-provided data necessary for entitlements, performance, gameplay features or consented analytics. If the platform provides a way to request data deletion, we honour such requests within required timeframes.</p>
 
   <h2>10. Children</h2>
-  <p>Our projects are generally aimed at adults and older teens. We do not knowingly collect personal data from children under 13, or a higher age where local law requires parental consent. If you believe a child has provided us with personal data, please contact us so we can review and, where appropriate, delete it.</p>
+  <p>Sneksoft products are primarily aimed at adults and older teens. We do not knowingly collect personal data from children under 13, or any higher age required by local laws. If you believe a child has used a product or submitted data, please contact us so we can review and delete it where necessary.</p>
 
   <h2>11. Security</h2>
-  <p>We use reasonable technical and organisational measures appropriate to the type of data (for example access controls, monitoring and backups). No system is perfectly secure, but we work to reduce unnecessary collection and limit who can access what.</p>
+  <p>We use reasonable technical and organisational measures to protect data: access controls, monitoring, encrypted transport, rate limiting, and minimisation practices. No system is perfectly secure, but we work to reduce risk wherever possible.</p>
 
   <h2>12. International transfers</h2>
-  <p>Because we may use global infrastructure providers, your data may be processed in countries outside your own. Where required by law, we rely on appropriate safeguards (for example, standard contractual clauses between providers).</p>
+  <p>Because we use global infrastructure providers, your data may be processed in countries outside your own. When required by law, we rely on safeguards such as standard contractual clauses or equivalent protections.</p>
 
   <h2>13. Contact</h2>
-  <p>If you have questions about this policy or how we handle data in a specific Sneksoft project, you can contact us via our contact Us Page</p>
+  <p>If you have questions,want to exercise your privacy rights or delete any data.   Please contact us via our Contact Us page or email:</p>
+  <p>danielmcvittie367@gmail.com</strong></p>
 
   <h2>14. Changes to this policy</h2>
-
-  <p>We may update this privacy policy as projects evolve or legal requirements change. When we do, we’ll update the “Last updated” date at the top. For significant changes, we may also highlight the update in-app, on the website or via community channels.</p>
+  <p>We may update this privacy policy as our projects evolve or legal requirements change. When we do, we’ll update the “Last updated” date above. Significant changes may be announced on our website, in-app or through community channels.</p>
 </section>
